@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro JS</title>
+    <style>/*CSS*/
+        body{
+            background-color: lightgrey;
+        }
+
+        div{
+            background-color: white;
+            text-align: center;
+            width: 70vw;
+            margin: auto;
+            padding: 6px;
+        }
+
+        p{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div> <!--HTML-->
+        <h1>Hello, Wolrd!!!</h1>
+        <p></p>
+    </div>
+
+    <script>/*JavaScrit*/
+    var n1 = Number(window.prompt("Digite um numero: "))//de String para Number
+    var n2 = Number(window.prompt("Digite outro numero: "))//de String para Number
+    var s = n1 + n2
+    // + serve para concatenação
+    // + também serve para adição (logo o algoritimo fica confuso)
+
+    window.alert('A soma entre ${n1} e ${n2} e igual a ${s}')
+    </script>
+</body>
+</html>
