@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Começando com DOM</title>
+    <title>DOM Selector</title>
     <style>
         body{
             background-color: rgb(32, 124, 155);
@@ -16,10 +16,11 @@
     <h1>Primeiros passos no DOM</h1>
     <P>Aqui vai o resultado</P>
     <p>Aprendendo a usar <strong>DOM</strong> em java Script</p>
-    <div>Clique em mim</div>
+    <div id="dd">Clique em mim</div>
 
     <Script>
-        
+        var s = window.document.querySelector('div#dd')
+        s.style.background = "black"
     </Script>
 </body>
 </html>
