@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background-color: rgb(21, 187, 21);
+            font-size: 1.5em;
+            color: white;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.719);
+        }
+
+        .filho{
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> <!--onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"-->
+        <p class="filho">Interaja...</p>
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        //faz com que "a" seja como uma variavel universal, pois pode ser utilizada em cada função.
+
+        a.addEventListener("click", clicar)
+        a.addEventListener("mouseenter", entrar)
+        a.addEventListener("mouseout", sair)
+        //isso faz a função que antes estava no HTML.
+        function clicar() {
+            a.innerText = "Clicou!"
+            a.style.background = "black"
+        }
+        function entrar() {
+            a.innerText = "Entrou!"
+            a.style.background = "red"
+        }
+        function sair() {
+            a.innerText = "Saiu!"
+            a.style.background = "green"
+        }
+    </script>
+</body>
+</html>
