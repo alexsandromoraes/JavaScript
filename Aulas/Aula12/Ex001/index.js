@@ -1,10 +1,10 @@
-var idade = 197
+var idade = 68
+// Uma divisão entre idades que podem votar ou não!
+console.log(`Você tem ${idade} anos`)
 if (idade < 16){
     console.log("Não vota")
-} else {
-    if (idade >=16, idade < 18) {
-        console.log('Você pode votar')
+} else if (idade < 18, idade > 67) {
+        console.log('Voto opcional')
     } else {
-        console.log('Você vota')
+        console.log('Voto obrigatorio')
     }
-}
