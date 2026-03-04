@@ -21,12 +21,6 @@ section{
 
 }
 
-section div#foto{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
 footer{
     color: white;
     text-align: center;
